@@ -39,9 +39,9 @@ public class CacheConfig {
         config.setExpiryPolicyFactory(CreatedExpiryPolicy.factoryOf(new Duration(TimeUnit.SECONDS, 5)));
         Cache<Object, Object> cache = cacheManager.createCache("timeCache", config);
 
-        MutableCacheEntryListenerConfiguration<Object, Object> mutableCacheEntryListenerConfiguration
-                = new MutableCacheEntryListenerConfiguration<Object, Object>();
-        mutableCacheEntryListenerConfiguration.setCacheEntryListenerFactory(FactoryBuilder.factoryOf(CacheEntryListener.class));
+//        MutableCacheEntryListenerConfiguration<Object, Object> mutableCacheEntryListenerConfiguration
+//                = new MutableCacheEntryListenerConfiguration<Object, Object>();
+//        mutableCacheEntryListenerConfiguration.setCacheEntryListenerFactory(FactoryBuilder.factoryOf(CacheEntryListener.class));
 
         // Listener
 //        Class<? extends CacheEventListener<?, ?>> listner;
